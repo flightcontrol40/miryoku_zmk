@@ -1,0 +1,5 @@
+{
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/build-example-corne-nice_nano_v2-nice_view.yml"
+    ]
+}
