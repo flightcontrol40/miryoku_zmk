@@ -1,8 +1,8 @@
-#line 4 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/miryoku.dtsi"
+//#line 4 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/miryoku.dtsi"
 
 #include <behaviors/mouse_key_press.dtsi>
 
-#line 18 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/miryoku.dtsi"
+//#line 18 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/miryoku.dtsi"
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
@@ -108,22 +108,9 @@
     };
 };
 
-#line 21 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/
+//#line 21 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/
 
-miryoku_shift_functions.dtsi {
-    "
-/
 
-    macros {
-        u_macro_u_bt_sel_0: u_macro_u_bt_sel_0 {
-            label = "ZM_u_macro_u_bt_sel_0";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            bindings = <&bt BT_SEL 0 &bt BT_CLR>;
-        };
-    };
-};
 
 / {
     behaviors {
@@ -213,17 +200,6 @@ miryoku_shift_functions.dtsi {
     };
 };
 
-/ {
-    macros {
-        u_macro_u_bt_sel_4: u_macro_u_bt_sel_4 {
-            label = "ZM_u_macro_u_bt_sel_4";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            bindings = <&bt BT_SEL 4 &bt BT_CLR>;
-        };
-    };
-};
 
 / {
     behaviors {
@@ -264,12 +240,9 @@ miryoku_shift_functions.dtsi {
     };
 };
 
-#line 19 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/
+//#line 19 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/
 
-miryoku_double_tap_guard.dtsi {
-    "
-/
-
+/ {
     behaviors {
         u_to_U_BASE: u_to_U_BASE {
             compatible = "zmk,behavior-tap-dance";
@@ -389,12 +362,20 @@ miryoku_double_tap_guard.dtsi {
     };
 };
 
-#line 4 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/
 
-miryoku_mousekeys.dtsi {
-    "
-/
+/ {
+    macros {
+        u_macro_u_bt_sel_0: u_macro_u_bt_sel_0 {
+            label = "ZM_u_macro_u_bt_sel_0";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            bindings = <&bt BT_SEL 0 &bt BT_CLR>;
+        };
+    };
+};
 
+/ {
     macros {
         u_macro_btn1: u_macro_btn1 {
             label = "ZM_u_macro_btn1";
@@ -402,6 +383,18 @@ miryoku_mousekeys.dtsi {
             #binding-cells = <0>;
             wait-ms = <0>;
             bindings = <&kp KP_SLASH &kp KP_N5>;
+        };
+    };
+};
+
+/ {
+    macros {
+        u_macro_u_bt_sel_4: u_macro_u_bt_sel_4 {
+            label = "ZM_u_macro_u_bt_sel_4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            bindings = <&bt BT_SEL 4 &bt BT_CLR>;
         };
     };
 };
@@ -430,12 +423,10 @@ miryoku_mousekeys.dtsi {
     };
 };
 
-#line 4 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/
+//#line 4 "/mnt/c/Users/natha/Documents/Corne/miryoku_zmk/miryoku/
 
-miryoku_behaviors.dtsi {
-    "
-/
 
+/ {
     behaviors {
         ru_mt: ru_mt {
             compatible = "zmk,behavior-hold-tap";
