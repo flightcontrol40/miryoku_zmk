@@ -234,7 +234,6 @@
             label = "u_caps_word";
             #binding-cells = <0>;
             bindings = <&caps_word>, <&kp CAPS>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };

@@ -5,6 +5,7 @@
 
 #include "miryoku_babel/miryoku_layer_selection.h"
 #include "miryoku_babel/miryoku_layer_list.h"
+#include "key_codes.h"
 
 #define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
 #define U_STRINGIFY(x) #x
@@ -25,6 +26,12 @@
 #define U_NU &none // available but not used
 
 #define U_TAPPING_TERM 200
+
+#if defined (U_REQUIRE_PRIOR_IDLE_MS)
+  #define CUSTOM_MODS_ENABLED 1
+#else
+  #define U_REQUIRE_PRIOR_IDLE_MS 175
+#endif
 
 #include "miryoku_clipboard.h"
 
