@@ -13,7 +13,6 @@
 / { \
   macros { \
     name: name { \
-      label = U_STRINGIFY(ZM_ ## name); \
       compatible = "zmk,behavior-macro"; \
       #binding-cells = <0>; \
       __VA_ARGS__ \
